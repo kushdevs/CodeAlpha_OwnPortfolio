@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background: #f7f7f7;
+  color: #333;
+}
+
+/* Navbar */
+nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  background: #fff;
+  position: sticky;
+  top: 0;
+}
+
+nav ul {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+nav a {
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+}
+
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e6e6e6;
+}
+
+.hero h2 span {
+  color: #0077ff;
+}
+
+.btn {
+  background: #0077ff;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+  margin-top: 10px;
+  text-decoration: none;
+}
+
+/* Sections */
+section {
+  padding: 50px;
+  text-align: center;
+}
+
+.skills-box span {
+  background: #0077ff;
+  color: white;
+  padding: 8px 15px;
+  margin: 5px;
+  display: inline-block;
+  border-radius: 5px;
+}
+
+.project-card {
+  background: #fff;
+  padding: 20px;
+  margin: 15px auto;
+  max-width: 500px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+.project-card .btn {
+  display: inline-block;
+  background: #0077ff;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 6px;
+  margin-top: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Toggle Button */
+#theme-toggle {
+  background: none;
+  border: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* Default Light Mode */
+body.light {
+  background: #f7f7f7;
+  color: #222;
+}
+
+/* Dark Mode */
+body.dark {
+  background: #1a1a1a;
+  color: #f5f5f5;
+}
+
+.dark nav {
+  background: #222;
+}
+
+.dark .project-card {
+  background: #2a2a2a;
+  color: #fff;
+  box-shadow: 0 0 15px rgba(255,255,255,0.1);
+}
+
+.dark .skills-box span {
+  background: #005cc8;
+}
+/* Light mode hero */
+.hero {
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: #e6e6e6;   /* light mode background */
+  transition: 0.3s ease;
+}
+
+/* Dark mode hero */
+.dark .hero {
+  background: #2a2a2a;   /* dark mode background */
+}
+.dark .hero h2,
+.dark .hero p {
+  color: #ffffff;
+}
+/* Dark mode nav links */
+.dark nav a {
+  color: #ffffff !important;
+}
